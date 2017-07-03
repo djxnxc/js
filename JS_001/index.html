@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>js_001</title>
+		<!--引如js文件
+			放在<head>部分
+			最常用的方式是在页面中head部分放置<script>元素，浏览器解析head部分就会执行这个代码，然后才解析页面的其余部分。
+			放在<body>部分
+			JavaScript代码在网页读取到该语句的时候就会执行。
+		-->
+		<script type="text/javascript" src="js/my_alert.js" ></script>
+	</head>
+	<body>
+		<P id = "p1">第一行文字</P>
+		<P id = "p2">第二行文字</P>
+		<script type="text/javascript">
+			//输出
+			document.write("hello ");
+			//document.getElementById("p1")根据id为p1取到标签
+			document.getElementById("p1").style.color = "red";
+//			var 变量名
+			/*
+			 变量名可以任意取名，但要遵循命名规则:
+
+   			 1.变量必须使用字母、下划线(_)或者美元符($)开始。
+
+   			 2.然后可以使用任意多个英文字母、数字、下划线(_)或者美元符($)组成。
+
+    			 3.不能使用JavaScript关键词与JavaScript保留字。
+			 */
+			var mychar;
+			mychar = "javascript ";
+			var mynumber = 6;
+			mynumber = 10;
+			document.write(mychar);
+			document.write(mynumber)
+			/*
+			 注意:
+
+				1. 在JS中区分大小写，如变量mychar与myChar是不一样的，表示是两个变量。
+
+				2. 变量虽然也可以不声明，直接使用，但不规范，需要先声明，后使用。
+			 * */
+		</script>
+	</body>
+</html>

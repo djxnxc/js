@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>消息对话框</title>
+		<script type="text/javascript">
+			var message = confirm("你喜欢我吗？");
+			if(message == true){
+				alert("那我就不惩罚你了！我也喜欢你！(*^__^*) 嘻嘻……");
+			}
+			else{
+				var isGay=confirm("哼！说吧你是不是同性恋！");
+				if(isGay == true){
+					alert("啊！那你喜欢男人还是女人？");
+					var likeSex=confirm("喜欢男人？")
+					if(likeSex == true){
+						alert("原来你是gay！☺️")
+
+					}else{
+						alert("原来你是Les!😝");
+					}
+				}
+				else{
+					var isMan=confirm("哼！小样还不承认！那你是不是男的！");
+					if(isMan == true){
+						alert("原来你是gay！☺️")
+					}else{
+						alert("原来你是Les!😝");
+					}
+				}
+			}
+		
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
