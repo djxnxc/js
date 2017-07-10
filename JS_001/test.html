@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>练习</title>
+		<script type="text/javascript">
+			function newWindow(){
+				var isOpen = confirm("是否打开新窗口?");
+				if(isOpen == true){
+					var  address=prompt("请输入慕课网网址:","http://www.imooc.com");
+					if(address !=null){
+						if(address == "http://www.imooc.com"){
+							window.op
+							window.open(address,'_blank','width=400,height=500,menubar=no,toolbar=no');
+						}
+						else{
+							alert("输入的网址错误,请重新操作！");
+						}
+					}
+				}else{
+					//没有操作	
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="打开新窗口" onclick="newWindow()"/>
+	</body>
+</html>

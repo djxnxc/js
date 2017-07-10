@@ -1,9 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>打开新窗口</title>
+		<script type="text/javascript">
+			var mywin;
+			function Wopen() {
+				mywin = window.open('http://www.imooc.com', '_blank', 'width=600,height=200,top=100,left=0');
+				//				mywin=window.open('http://www.imooc.com', '_self', 'width=600,height=200,top=100,left=0');
+			}
+
+			function Wclose() {
+				mywin.close();//关闭指定窗口
+			  //window.close();//关闭本窗口
+			}
+		</script>
 	</head>
+
 	<body>
+		<input type='button' value='打开' onclick="Wopen()" />
+		<input type='button' value='关闭' onclick="Wclose()" />
+
 	</body>
+
 </html>
