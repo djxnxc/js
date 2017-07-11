@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>onfocus</title>
+		<script type="text/javascript">
+			var tag=0;
+			function message(){
+				if(tag==0){
+					alert("光标聚集事件!");
+					tag=1;
+				}
+				else{
+					tag=0;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" onfocus="message()" />
+	</body>
+</html>

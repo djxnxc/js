@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>onunload卸载事件</title>
+		<script type="text/javascript">
+			window.onunload=message;
+			window.onbeforeunload = message;
+			function message(){
+				alert("要离开页面吗？");
+			}
+			function openWiodw(){
+				window.open('http://www.baidu.com','_self','width:300,height:400px');
+			}
+		</script>
+	</head>
+	<body >	
+		<a href="http://www.baidu.com">点击跳转</a>
+		<input name="button" type="button" value="打开新窗口" onclick="openWiodw()"  />
+	</body>
+</html>

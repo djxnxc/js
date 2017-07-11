@@ -1,0 +1,33 @@
+<!DOCTYPE  HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>数组</title>
+		<script type="text/javascript">
+			//创建数组
+			var arr = ['*', "##", "***", "&&", "****", "##*"];
+			arr[7] = "**";
+			//显示数组长度
+			document.write(arr.length+"<br />");
+			document.write(arr+"<br />");
+			//将数组内容输出，完成达到的效果。
+			var sortArr = new Array;
+			var j = 0;
+			for(var i = 0; i < arr.length; i++) {
+				if(arr[i]!=undefined&&arr[i][0] == '*'){//过滤掉值为空和不符合条件的字符串
+					sortArr[j] = arr[i];
+					j++;
+				}
+			}
+			document.write("新数组为:" + sortArr+"<br />");
+			sortArr.sort();//对数据进行排序
+			for (var i = 0; i < sortArr.length; i++) {
+				document.write(sortArr[i]+"<br />");
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+
+</html>

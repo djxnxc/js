@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>onchange文本内容改变且失去焦点事件</title>
+		<script type="text/javascript">
+			function message(){
+				alert("触发了文本内容改变且失去焦点事件!");
+			}
+		</script>
+	</head>
+	<body>
+		<form>
+			内容:<br />
+			<textarea cols="60" rows="6" onchange="message()">请输入内容</textarea>
+		</form>
+	</body>
+</html>

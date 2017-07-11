@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>onblur</title>
+		<script type="text/javascript">
+			function message(){
+				alert("请确定已输入密码后，再移开(失去焦点事件)!");
+			}
+		</script>
+	</head>
+	<body>
+		密码:
+		<input type="text" onblur="message()" value="请输入密码" />
+	</body>
+</html>

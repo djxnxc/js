@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<!--使用JS完成一个简单的计算器功能。实现2个输入框中输入整数后，点击第三个输入框能给出2个整数的加减乘除-->
+		<title>编程练习</title>
+		<script type="text/javascript">
+			function caculate() {
+				var num1 = document.getElementById("text1").value;
+				var num2 = document.getElementById("text2").value;
+				var sum = document.getElementById("result");
+				var way = document.getElementById("select1").value;
+				switch(way) {
+					case '+':
+						sum.value = parseFloat(num1) + parseFloat(num2);
+						break;
+					case '-':
+						sum.value = parseFloat(num1) - parseFloat(num2);
+
+						break;
+					case '*':
+						sum.value = parseFloat(num1) * parseFloat(num2);
+
+						break;
+					case '/':
+						sum.value = parseFloat(num1) / parseFloat(num2);
+						break;
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<form>
+			<input type="text" name="text1" id="text1" value="" />
+			<select id="select1">
+				<option>+</option>
+				<option>-</option>
+				<option>*</option>
+				<option>/</option>
+			</select>
+			<input type="text" name="text2" id="text2" value="" />
+			<input type="button" name="way" id="way" value="=" onclick="caculate()" />
+			<input type="text" name="result" id="result" value="" />
+
+		</form>
+	</body>
+
+</html>
